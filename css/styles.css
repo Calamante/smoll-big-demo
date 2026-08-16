@@ -235,6 +235,8 @@ textarea {
 
     align-items: flex-end;
 
+    padding-top: 100px;
+
     color: white;
 
     overflow: hidden;
@@ -310,10 +312,11 @@ textarea {
 
 .hero h1 {
 
-    max-width: 950px;
+    max-width: 900px;
 
     font-size:
-        clamp(52px, 8vw, 115px);
+        
+    clamp(52px, 7vw, 105px);
 
     line-height: .9;
 
@@ -1870,6 +1873,14 @@ textarea {
 ========================================= */
 
 @media (max-width: 850px) {
+
+    
+
+        .hero {
+
+        padding-top: 110px;
+
+    }
 
         .service-modal {
 
