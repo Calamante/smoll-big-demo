@@ -805,6 +805,17 @@ textarea {
         url("../images/obras/obra-03.jpg");
 }
 
+.project-image-4 {
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 35%,
+            rgba(0,0,0,.85)
+        ),
+        url("../images/obras/obra-04.jpg");
+}
+
 .projects-demo-note {
 
     margin-top: 20px;
