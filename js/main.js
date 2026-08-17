@@ -8,7 +8,14 @@ const navigation = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
 
-    navigation.classList.toggle("active");
+    const isOpen =
+        navigation.classList.toggle("active");
+
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
 
 });
 
@@ -24,6 +31,10 @@ navigationLinks.forEach((link) => {
     link.addEventListener("click", () => {
 
         navigation.classList.remove("active");
+
+        menuButton.setAttribute(
+            "aria-expanded", "false"
+        );
 
     });
 

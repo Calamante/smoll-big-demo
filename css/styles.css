@@ -1922,6 +1922,22 @@ textarea {
     cursor: pointer;
 }
 
+/* =========================================
+   FOCUS ACCESSIBLE
+========================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+
+    outline:
+        3px solid var(--accent);
+
+    outline-offset:
+        3px;
+}
+
 
 
 /* =========================================

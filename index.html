@@ -10,6 +10,25 @@
 
     <title>Small & Big | Fabricacion y Montaje Industrial</title>
 
+    <meta name="description"
+        content="Demo web de SmAll & Big. Fabricacion y Montaje de galpones, estructuras metálicas y proyectos industriales en Balcarce.">
+
+    <meta name="theme-color" content="#0b0b0b">
+
+    <!-- Open Graph básico -->
+
+    <meta property="og:title" content="Smoll & Big | Montaje Industrial">
+
+    <meta property="og:description"
+        content="Montaje de galpones y estructuras industriales para proyectos que exigen experiencia, precisión y compromiso.">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./images/favicon/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -27,7 +46,7 @@
                 SMALL <span>&</span> BIG
             </a>
 
-            <nav class="navigation">
+            <nav class="navigation" id="main-navigation" aria-label="Navegación principal">
 
                 <a href="#empresa">Empresa</a>
                 <a href="#servicios">Servicios</a>
@@ -39,7 +58,8 @@
 
             </nav>
 
-            <button class="menu-button" aria-label="Abrir menú">
+            <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="main-navigation">
                 ☰
             </button>
 
@@ -61,7 +81,7 @@
             <div class="container hero-content">
 
                 <p class="eyebrow">
-                   FABRICACION . MONTAJE · ESTRUCTURAS · PROYECTOS INDUSTRIALES
+                    FABRICACION . MONTAJE · ESTRUCTURAS · PROYECTOS INDUSTRIALES
                 </p>
 
                 <h1>
@@ -732,13 +752,13 @@
                     </div>
 
 
-                    <form class="contact-form">
+                    <form class="contact-form" id="contactForm">
 
                         <label>
 
                             Nombre
 
-                            <input type="text" name="nombre" placeholder="Tu nombre" required>
+                            <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
 
                         </label>
 
@@ -747,7 +767,8 @@
 
                             Empresa
 
-                            <input type="text" name="empresa" placeholder="Nombre de la empresa">
+                            <input type="text" name="empresa" placeholder="Nombre de la empresa"
+                                autocomplete="organización" required>
 
                         </label>
 
@@ -756,7 +777,7 @@
 
                             Email
 
-                            <input type="email" name="email" placeholder="tu@email.com" required>
+                            <input type="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
 
                         </label>
 
